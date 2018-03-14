@@ -1,0 +1,13 @@
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background: $primary-color;
+	padding: 10px 0;
+
+	p {
+		color: $white-color;
+		font-size: 14px;
+	}
+
+}
