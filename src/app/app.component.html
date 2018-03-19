@@ -6,10 +6,12 @@
         <aside>
           <ul class="connect-us">
             <li>
-              <a href="mailto:info@reen.com"><fa name="envelope"></fa>info@reen.com</a>
+              <a href="mailto:info@reen.com">
+              <fa name="envelope"></fa>info@reen.com</a>
             </li>
             <li>
-              <a href="tel:+00 (123) 456 78 90"><fa name="phone"></fa>+00 (123) 456 78 90</a>
+              <a href="tel:+00 (123) 456 78 90">
+              <fa name="phone"></fa>+00 (123) 456 78 90</a>
             </li>
           </ul>
         </aside>
@@ -17,11 +19,31 @@
       <div class="col-4">
         <aside>
           <ul class="social-feeds">
-            <li><a href="javascript:void(0);"><fa name="facebook"></fa></a></li>
-            <li><a href="javascript:void(0);"><fa name="google-plus"></fa></a></li>
-            <li><a href="javascript:void(0);"><fa name="twitter"></fa></a></li>
-            <li><a href="javascript:void(0);"><fa name="behance"></fa></a></li>
-            <li><a href="javascript:void(0);"><fa name="dribbble"></fa></a></li>
+            <li>
+              <a href="javascript:void(0);">
+                <fa name="facebook"></fa>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0);">
+                <fa name="google-plus"></fa>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0);">
+                <fa name="twitter"></fa>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0);">
+                <fa name="behance"></fa>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0);">
+                <fa name="dribbble"></fa>
+              </a>
+            </li>
           </ul>
         </aside>
       </div>
@@ -40,26 +62,29 @@
           <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="mobilemenu">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav">
               <li class="nav-item active">
-                <a class="nav-link" routerLink="/home">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link">Home</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" routerLink="/about">About <span class="sr-only">(current)</span></a>
+                <a class="nav-link">Portfolio</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" routerLink="/coming-soon">Services <span class="sr-only">(current)</span></a>
+                <a class="nav-link">Blog</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" routerLink="/coming-soon">Portfolio <span class="sr-only">(current)</span></a>
+                <a class="nav-link">Pages</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" routerLink="/coming-soon">Contact <span class="sr-only">(current)</span></a>
+                <a class="nav-link">Features</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" routerLink="/coming-soon">Coming soon <span class="sr-only">(current)</span></a>
+                <a class="nav-link">Mega Menu</a>
               </li>
-              <li class="nav-item dropdown">
+              <li class="nav-item active">
+                <a class="nav-link">Contact</a>
+              </li>
+              <!-- <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Pages
                 </a>
@@ -69,8 +94,16 @@
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="#">Something else here</a>
                 </div>
-              </li>
+              </li> -->
             </ul>
+          </div>
+          <div class="search-bar">
+            <a href="javascript:void(0);" class="search-btn" (click)="openSearch()">
+              <fa name="{{searchIcon}}"></fa>
+            </a>
+            <div class="open" [ngClass]="{'in': searchOpen}">
+              <input type="text" placeholder="search">
+            </div>
           </div>
         </nav>
       </div>
@@ -82,10 +115,103 @@
 <!-- footer starts -->
 <footer>
   <div class="container">
-    <div class="row">
-      <div class="col"><p>&copy; 2018</p></div>
-      <div class="col text-center"><p>All rights reserved</p></div>
-      <div class="col text-right"><p>Develop By Paresh</p></div>
+    <div class="top-footer">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="footer-details">
+            <h6>Who we are</h6>
+            <div class="logo-footer">
+              <img src="assets/images/footer-logo.png" alt="logo">
+            </div>
+            <p>
+              Magnis modipsae voloratati andigen daepeditem quiate re porem que aut labor. Laceaque eictemperum quiae sitiorem rest non restibusaes maio es dem tumquam.
+            </p>
+            <a href="javascript:void(0);">More about us <fa name="long-arrow-right"></fa></a>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="footer-details">
+            <h6>Latest works</h6>
+            <div class="brands">
+              <a href="javascript:void:(0);">
+                <img src="assets/images/work/work1.jpg" alt="logo">
+              </a>
+              <a href="javascript:void:(0);">
+                <img src="assets/images/work/c1.jpg" alt="logo">
+              </a>
+              <a href="javascript:void:(0);">
+                <img src="assets/images/work/c2.jpg" alt="logo">
+              </a>
+              <a href="javascript:void:(0);">
+                <img src="assets/images/work/work2.jpg" alt="logo">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="footer-details">
+            <h6>Get in touch</h6>
+            <p>
+              Doloreiur quia commolu ptatemp dolupta oreprerum tibusam eumenis et consent accullignis dentibea autem inisita.
+            </p>
+            <ul class="connect">
+              <li>
+                <a target="_blank" href="http://www.ipanema.com">
+                  <fa name="map-marker"></fa>
+                  84 Street, City, State 24813
+                </a>
+              </li>
+              <li>
+                <a href="telto:+00 (123) 456 78 90">
+                  <fa name="phone"></fa>
+                  +00 (123) 456 78 90
+                </a>
+              </li>
+              <li>
+                <a href="mailto:info@reen.com">
+                  <fa name="envelope"></fa>
+                  info@reen.com
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="footer-details">
+            <h6>Who we are</h6>
+            <p>
+              Conecus iure posae volor remped modis aut lor volor accabora incim resto explabo.
+            </p>
+            <div class="subscribe">
+              <input type="text" placeholder="Enter your email address">
+              <button type="submit" class="green-btn">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sub-footer">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-sm-3">
+          <div class="rights-reserved">
+            <p>&copy; 2014 REEN. All rights reserved.</p>
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="rights-reserved">
+            <ul>
+              <li><a href="javascript:void(0);">Home</a></li>
+              <li><a href="javascript:void(0);">Portfolio</a></li>
+              <li><a href="javascript:void(0);">Blog</a></li>
+              <li><a href="javascript:void(0);">About</a></li>
+              <li><a href="javascript:void(0);">Services</a></li>
+              <li><a href="javascript:void(0);">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </footer>

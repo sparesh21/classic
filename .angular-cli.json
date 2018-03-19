@@ -23,6 +23,7 @@
     "scripts": [
       "../src/assets/js/jquery.slim.min.js",
       "../src/assets/js/bootstrap.min.js",
+      "../src/assets/js/owl/owl.carousel.min.js",
       "../src/assets/js/custom.js"
     ],
     "environmentSource": "environments/environment.ts",
