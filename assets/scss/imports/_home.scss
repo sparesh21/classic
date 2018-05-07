@@ -1,0 +1,140 @@
+.home-banner {
+	background: url(../images/home-banner.jpg);
+	height: 80vh;
+	width: 100%;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+
+	.banner-content {
+		text-align: center;
+
+		h1 {
+			color: $white-color;
+			text-transform: uppercase;
+			font-size: 78px;
+			line-height: 1.5;
+		}
+
+		p {
+			font-size: 22px;
+			color: $light-color;
+			line-height: 1.4;
+			margin: 0;
+		}
+
+		.green-btn {
+			margin-top: 50px;
+		}
+
+	}
+
+}
+
+.responsive-container {
+	background: $white-color;
+
+	.responsive-details {
+		.media {
+			.media-body {
+				padding-left: 25px;
+
+				h5 {
+					font-size: 24px;
+					color: $primary-color;
+					margin-bottom: 20px;
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+.work-container {
+	background: $bg-color;
+
+	.work-details {
+		text-align: center;
+
+		.content-wrapper {
+			overflow: hidden;
+			background: $white-color;
+			transition: 0.4s all ease;
+			border: 1px solid #e6e9ed;
+
+			&:hover {
+				box-shadow: 0px 10px 28px -4px rgba(0, 0, 0, 0.75);
+				transition: 0.4s all ease;
+			}
+
+			.content-title {
+				padding: 25px 0;
+
+				h3 {
+					color: $primary-color;
+					font-size: 20px;
+					line-height: 1.4;
+				}
+
+				p {
+					font-size: 14px;
+				}
+
+			}
+
+		}
+
+	}
+
+	.work-slider {
+		margin-top: 80px;
+
+		.owl-theme {
+			.owl-dots {
+				margin-top: 30px;
+
+				.owl-dot {
+					outline: none;
+
+					span {
+						opacity: 1;
+						background: $primary-color;
+						margin: 0;
+						margin-right: 10px;
+						width: 14px;
+						height: 14px;
+					}
+
+					&.active {
+						span {
+							opacity: 1;
+							background: $secondary-color;
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+.with-us-container {
+	.title-container {
+		margin-bottom: 0;
+
+		.green-btn {
+			margin-top: 30px;
+			@include btn($secondary-color, $white-color, $dark-color, $white-color);
+		}
+
+	}
+
+}

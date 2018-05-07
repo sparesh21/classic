@@ -1,0 +1,106 @@
+.top-header {
+    background: $header-color;
+    padding: 10px 0;
+    border-bottom: 1px solid #e6e9ed;
+    aside {
+        ul {
+            display: flex;
+            li {
+                margin-right: 30px;
+                a {
+                    font-size: 14px;
+                    color: $primary-color;
+                    &:hover {
+                        color: $secondary-color;
+                    }
+                    i {
+                        margin-right: 8px;
+                        font-size: 16px;
+                    }
+                }
+            }
+            &.social-feeds {
+                justify-content: flex-end;
+                li {
+                    margin-right: 20px;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    a {
+                        overflow: hidden;
+                        width: 30px;
+                        height: 30px;
+                        text-align: center;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        i {
+                            margin-right: 0;
+                        }
+                        &:hover {
+                            background: $secondary-color;
+                            color: $white-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+header {
+    .navbar {
+        padding: 30px 0;
+        position: relative;
+        overflow-x: hidden;
+        .search-bar {
+            position: relative;
+            width: 20%;
+            display: flex;
+            justify-content: flex-end;
+            height: 40px;
+            align-items: center;
+            a {
+                color: $primary-color;
+                font-size: 20px;
+                position: relative;
+                z-index: 2;
+                margin-right: 10px;
+            }
+            .open {
+                position: absolute;
+                right: 0;
+                transform: translateX(0%);
+                width: 100%;
+                transition: 0.4s all ease-in;
+                transform: translateX(100%);
+                &.in {
+                    transform: translateX(0%);
+                    transition: 0.4s all ease-out;
+                }
+                input {
+                    height: 36px;
+                    padding: 0 10px;
+                    border: 1px solid $primary-color;
+                }
+            }
+        }
+        .navbar-nav {
+            margin-left: 80px;
+            .nav-item {
+                margin-right: 15px;
+                .nav-link {
+                    color: $primary-color;
+                    font-size: 16px;
+                    cursor: pointer;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+    }
+}

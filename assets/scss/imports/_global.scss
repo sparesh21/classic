@@ -1,0 +1,70 @@
+body {
+	background: #fff;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: $primary-color;
+	font-weight: $font-medium;
+}
+
+@media (min-width:1200px) {
+	.container {
+		max-width: 1200px;
+	}
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+}
+
+p {
+	line-height: 1.5;
+	font-size: 18px;
+	color: $text-color;
+	font-weight: 400;
+}
+
+.green-btn {
+	@include btn($secondary-color, $white-color, $white-color, $dark-color);
+}
+
+.equal-padding {
+	padding: 90px 0;
+}
+
+.title-container {
+	text-align: center;
+	padding: 0 50px;
+	margin-bottom: 70px;
+
+	h2 {
+		color: $primary-color;
+		font-size: 44px;
+		margin-bottom: 30px;
+		font-weight: 600;
+	}
+
+	p {
+		color: $text-color;
+		line-height: 1.4;
+		font-weight: 400;
+	}
+
+}
+
+.img-effect {
+	overflow: hidden;
+
+	img {
+		width: 100%;
+		display: block;
+		transition: ease-out 1.5s all;
+		transform: scale(1);
+
+		&:hover {
+			transition: ease-in 1.5s all;
+			transform: scale(1.2);
+		}
+
+	}
+
+}
