@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { Parallax, ParallaxConfig } from 'ngx-parallax';
+
 
 import { routes } from './app.routing';
 import { AppComponent } from './app.component';
@@ -17,7 +17,7 @@ import { ComingSoonComponent } from './templates/coming-soon/coming-soon.compone
     HomeComponent,
     AboutComponent,
     ComingSoonComponent,
-    Parallax  
+      
   ],
   imports: [
     BrowserModule,
